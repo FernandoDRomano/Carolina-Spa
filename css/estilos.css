@@ -1,3 +1,256 @@
+/*
+    1. CONFIGURACIONES GLOBALES
+*/
+body {
+  background-color: #F8F8F8 !important;
+}
 
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.parallax {
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%;
+  /* BG behaviour */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+    2. ESTILOS AL #menuDeNavegacionPrincipal
+*/
+.iconosRedesSociales i {
+  transition: all 0.5s ease;
+}
+.iconosRedesSociales i:hover {
+  transform: scale(1.25) rotate(360deg);
+}
+
+#menuDeNavegacionPrincipal li a {
+  font-size: 1.2rem;
+}
+#menuDeNavegacionPrincipal nav {
+  border-top: 2px dashed #fff;
+  border-bottom: 2px dashed #fff;
+}
+#menuDeNavegacionPrincipal li:hover {
+  background-color: #c5e8e5;
+}
+#menuDeNavegacionPrincipal li:hover a {
+  text-decoration: none;
+  color: black !important;
+}
+
+/*
+    3. ESTILOS AL #slideDeImagenes
+*/
+#slideDeImagenes .swiper-wrapper {
+  height: 35rem;
+  color: #fff;
+}
+#slideDeImagenes .slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slideDeImagenes .slide_01 {
+  background-image: url(../images/slide_01.jpg);
+}
+#slideDeImagenes .slide_02 {
+  background-image: url(../images/slide_02.jpg);
+}
+#slideDeImagenes .slide_03 {
+  background-image: url(../images/slide_03.jpg);
+}
+#slideDeImagenes .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+#slideDeImagenes .swiper-pagination-bullet-active {
+  background: #8ED3CC;
+}
+#slideDeImagenes .swiper-button-next, #slideDeImagenes .swiper-button-prev {
+  color: #8ED3CC;
+}
+#slideDeImagenes .swiper-button-next:after, #slideDeImagenes .swiper-button-prev:after {
+  font-size: 1.5rem;
+}
+
+/*
+    4. ESTILOS A #bienvenido
+*/
+#bienvenido .titulo {
+  line-height: 2rem !important;
+}
+#bienvenido .leyenda {
+  font-size: 1.6rem;
+}
+#bienvenido .card {
+  border: 0 !important;
+  background-color: transparent !important;
+}
+#bienvenido .card-img-top {
+  border: 0.5rem solid #fff;
+  transition: all 0.4s ease;
+}
+#bienvenido .card-img-top:hover {
+  transform: scale(1.05) rotate(10deg);
+}
+#bienvenido .card-body {
+  border-radius: 0;
+  background-color: #fff !important;
+  z-index: 10;
+  margin-top: -4rem;
+}
+#bienvenido .card-body h4 {
+  font-size: 3.8rem;
+  line-height: 2.5rem;
+}
+#bienvenido .card-body h4 span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #000;
+}
+#bienvenido .card-footer {
+  border: 0;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+#bienvenido .card-footer a {
+  text-decoration: none;
+}
+#bienvenido .card-footer:hover {
+  background-color: #8ED3CC !important;
+}
+
+/*
+    5. ESTILOS A #horarios
+*/
+#horarios .bg-imagen {
+  height: 30rem;
+  z-index: 10;
+}
+#horarios .titulo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#horarios .table {
+  color: #fff;
+  margin-bottom: 0;
+  border: 2px solid #E182A8 !important;
+}
+#horarios .table thead {
+  background-color: #E182A8 !important;
+}
+#horarios .table thead th {
+  border-bottom: 0 !important;
+}
+
+/*
+    6. ESTILOS A #productos
+*/
+#productos h2 {
+  font-size: 4rem;
+  line-height: 0.5rem;
+}
+#productos .subTitulo {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+#productos a {
+  text-decoration: none;
+}
+#productos a .card {
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  border-radius: 0;
+}
+#productos a .card .nombreProducto {
+  color: #E182A8;
+  font-size: 1.2rem;
+}
+#productos a .card .descripcion {
+  font-size: 0.8rem;
+}
+#productos a .card .precio {
+  font-size: 1.5rem;
+}
+#productos .card:hover {
+  transform: scale(1.1);
+}
+
+/*
+    7. ESTILOS A #realizaUnaCita
+*/
+#realizaUnaCita {
+  height: 45rem;
+}
+#realizaUnaCita .titulo {
+  font-size: 3.7rem;
+}
+#realizaUnaCita .contenido {
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+#realizaUnaCita .btn {
+  border-radius: 0 !important;
+}
+
+/*
+    8. ESTILOS A #pieDePagina
+*/
+#pieDePagina .titulo {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*
+    X. MEDIA QUERYS
+*/
+@media (min-width: 425px) {
+  #bienvenido .card-body {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+@media (min-width: 768px) {
+  #bienvenido .titulo {
+    line-height: 0.5rem !important;
+  }
+  #bienvenido .card-body {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #horarios .bg-imagen {
+    height: 40rem;
+  }
+
+  #realizaUnaCita {
+    height: 35rem;
+  }
+}
+@media (min-width: 992px) {
+  #bienvenido .card-body {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
