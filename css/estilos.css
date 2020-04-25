@@ -54,6 +54,13 @@ body {
   text-decoration: none;
   color: black !important;
 }
+#menuDeNavegacionPrincipal li.active {
+  background-color: #c5e8e5;
+}
+#menuDeNavegacionPrincipal li.active a {
+  text-decoration: none;
+  color: #E182A8 !important;
+}
 
 /*
     3. ESTILOS AL #slideDeImagenes
@@ -220,13 +227,64 @@ body {
   text-align: center;
 }
 
+#paginaNosotrosHero .bloqueInformacion {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#paginaNosotrosHero .titulo {
+  font-size: 3.5rem;
+  color: #8ED3CC;
+  font-weight: bold;
+}
+#paginaNosotrosHero .contenido {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+#paginaNosotrosHero h3 {
+  font-size: 4rem;
+  line-height: 0.5rem;
+}
+#paginaNosotrosHero .subTitulo {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+#paginaNosotrosHero .modal.show .modal-dialog {
+  width: 90%;
+}
+#paginaNosotrosHero .horario {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+#paginaNosotrosHero .table {
+  color: #fff;
+  margin-bottom: 0;
+  border: 2px solid #E182A8 !important;
+}
+#paginaNosotrosHero .table thead {
+  background-color: #E182A8 !important;
+}
+
 /*
     X. MEDIA QUERYS
 */
+@media (min-width: 375px) {
+  .modal.show .modal-dialog {
+    width: 92% !important;
+  }
+}
 @media (min-width: 425px) {
   #bienvenido .card-body {
     padding-left: 4rem !important;
     padding-right: 4rem !important;
+  }
+
+  .modal.show .modal-dialog {
+    width: 93% !important;
   }
 }
 @media (min-width: 768px) {
