@@ -320,6 +320,54 @@ body {
   font-size: 1.9rem;
 }
 
+#paginaProductosHero .bloqueInformacion {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 0;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#paginaProductosHero .titulo {
+  font-size: 3.5rem;
+  color: #8ED3CC;
+  font-weight: bold;
+}
+#paginaProductosHero .contenido {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+#paginaProductosHero h3 {
+  font-size: 4rem;
+  line-height: 0.5rem;
+}
+#paginaProductosHero .subTitulo {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+#paginaProductosHero .productos a {
+  text-decoration: none;
+}
+#paginaProductosHero .productos a .card {
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  border-radius: 0;
+}
+#paginaProductosHero .productos a .card .nombreProducto {
+  color: #E182A8;
+  font-size: 1.2rem;
+}
+#paginaProductosHero .productos a .card .descripcion {
+  font-size: 0.8rem;
+}
+#paginaProductosHero .productos a .card .precio {
+  font-size: 1.5rem;
+}
+#paginaProductosHero .productos .card:hover {
+  transform: scale(1.1);
+}
+
 /*
     X. MEDIA QUERYS
 */
