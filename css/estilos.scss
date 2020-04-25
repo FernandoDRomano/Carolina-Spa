@@ -309,6 +309,77 @@ $primary: #E182A8;
     }
 }
 
+/////////////////////////////////////////////////////////////////
+//////////////////////// PÁGINA SERVICIOS ///////////////////////
+/////////////////////////////////////////////////////////////////
+
+#paginaServiciosHero{
+    .bloqueInformacion{
+        position: absolute;
+        bottom: 2.5rem;
+        right: 0;
+        color: white;
+        font-size: 2.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .titulo{
+        font-size: 3.5rem;
+        color: $secondary;
+        font-weight: bold;
+    }
+    .contenido{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    h3{
+        font-size: 4rem;
+        line-height: 0.5rem;
+    }
+    .subTitulo {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    .accordion{
+        .card-header{
+            background-color: $primary;
+            padding: 0;
+            h2{
+                color: #fff!important;
+                font-size: 2rem;
+                text-decoration: none;
+            }
+        }
+        .card-body{
+            p{
+                font-size: 1.2rem;
+                margin-bottom: 0;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .aside{
+
+        .nuevosClientes{
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    
+        .cupon{
+
+            border: 2px dashed #fff;
+
+            .tituloCupon{
+                font-size: 1.9rem;
+            }
+        }
+    }
+    
+}
+
 /*
     X. MEDIA QUERYS
 */
