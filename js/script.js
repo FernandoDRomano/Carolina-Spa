@@ -38,3 +38,9 @@ let mySwiper = new Swiper ('.swiper-container', {
 new universalParallax().init({
 	speed: 6.0
 });
+
+/*
+    CONFIGURANDO AOS (ANIMATE ON SCROLL LIBRARY
+*/
+
+AOS.init();
